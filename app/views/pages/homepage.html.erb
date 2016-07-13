@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+    #menu ul{
+      list-style: none;
+      background-color: grey;
+      padding: 20px;
+    }
+
+    #menu li{
+      display: inline;
+      padding: 10px;
+      background-color: red;
+    }
+
+    </style>
+
+
+  </head>
+  <body>
+    <div style="background-color:blue; padding:20px;">
+      <h1>Welcome to Awesome Alpha Blog</h1>
+    </div>
+    <div id="menu">
+      <ul>
+        <li><%= link_to 'Home', root_path %></li>
+        <li><%= link_to 'About', about_path %></li>
+      </ul>
+    </div>
+    <div>
+      <div style="float: left; width: 50%;">
+        <h2>Read this to learn all about the new Awesome Alpha Blog</h2>
+        <p>This is where I want to have the first block to the left</p>
+      </div>
+      <div style="float: right; width: 50%">
+        <h2>Sign up or Join</h2>
+        <p>This is where I want to have the second block to the right</p>
+        <div>
+          <ul>
+            <li>Sign-Up</li>
+            <li>Join</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
